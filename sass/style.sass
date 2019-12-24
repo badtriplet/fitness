@@ -1,0 +1,329 @@
+@import reset
+@import var
+@import elem
+
+
+header
+ background: linear-gradient(to bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(../img/main_bg-min.png)
+ background-position: center center
+ background-size: cover
+ height: 820px
+ padding-top: 21px
+nav
+ width: 90%
+ max-width: 1520px
+ margin: 0 auto
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex	
+ justify-content: space-between
+ align-items: center
+ margin-bottom: 130px
+.section
+ &_welcome
+ &_cabinets
+  background-color: $white
+  & .class_cards
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   flex-direction: row
+   justify-content: space-between
+
+  & .class_card
+   display: -webkit-flex
+   display: -moz-flex
+   display: -ms-flex
+   display: -o-flex
+   display: flex
+   flex-direction: column
+   width: 31%
+   &_name
+    font-size: 26px
+    font-weight: 700
+    line-height: 30px
+   &_text
+    margin-top: 31px
+    margin-bottom: 53px
+   &_bottom
+    padding: 40px
+    background: $bg-gray
+   &_top
+    height: 399px
+    width: auto
+
+
+ &_trainers
+  background: linear-gradient(to bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)),  url(../img/trainers_bg-min.png)
+  background-position: center center
+  background-size: cover
+  height: 586px
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  &_list
+   & .cards
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex	
+    justify-content: center
+    &_card
+     width: 31%
+ &_special
+  max-width: 100%
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+ &_footer
+  background: $black-text
+  font-size: 14px
+  font-weight: 400
+  line-height: 30px
+  color: $white
+
+/***trainers_section****/
+.trainers
+ &_title
+  &__small
+   font-weight: 400
+
+.trainer
+ margin-bottom: 40px
+ &_1
+  background: url(../img/trainers/trainer_1-min.png) no-repeat
+  background-position: center center
+  background-size: contain
+ &_2
+  background: url(../img/trainers/trainer_2-min.png) no-repeat
+  background-position: center center
+  background-size: contain
+ &_3
+  background: url(../img/trainers/trainer_3-min.png) no-repeat
+  background-position: center center
+  background-size: contain
+
+/****special_section******/
+.special
+ &_try
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: linear-gradient(to bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(../img/special_try-min.png)
+  background-position: center center
+  background-size: cover
+  height: 437px
+  width: 50%
+ &_call
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: linear-gradient(to bottom, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(../img/special_call-min.png)
+  background-position: center center
+  background-size: cover
+  height: 437px
+  width: 50%
+ &_title
+  &__big
+   font-size: 46px
+   font-weight: 700
+   line-height: 30px
+   text-transform: uppercase
+   color: $white
+   margin-bottom: 50px
+  &__small
+   font-size: 18px
+   font-weight: 700
+   line-height: 30px
+   text-transform: uppercase
+   color: $white
+   margin-bottom: 38px
+
+.class_0
+ background: url(../img/classes/class_1-min.png) no-repeat
+ background-position: center center
+ background-size: contain
+.class_1
+ background: url(../img/classes/class_2-min.png) no-repeat
+ background-position: center center
+ background-size: contain
+.class_2
+ background: url(../img/classes/class_3-min.png) no-repeat
+ background-position: center center
+ background-size: contain
+
+.welcome_content
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ flex-direction: row
+ &_text
+  height: 100%
+  margin-top: 10%
+ & .text__small
+  margin-bottom: 0
+ & .light
+  margin-bottom: 61px
+.welcome_content_text
+ width: 50%
+.welcome_content_img
+ width: 50%
+ background: url(../img/triangle-min.png) no-repeat
+ background-size: contain
+ background-position: top center
+ height: 806px
+
+.top_card_form
+ height: 519px
+ margin-top: -110px
+ box-shadow: 0 3px 40px rgba(0, 0, 0, 0.1)
+
+.section_cabinets .class_card_bottom
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ flex-direction: column
+ justify-content: space-between
+ align-items: space-between
+ min-height: 320px
+
+@media screen and (max-width: 1199.999px)
+ .section_cabinets
+  & .class_card_bottom
+     padding: 16px 
+ .class_card
+  & .class_card_top
+   width: 100%
+ .title
+  text-align: center
+ .special_title__big
+  font-size: 35px
+ .footer_social span, .footer_social i
+  margin-right: 15px
+ .footer_form input, .footer_form button
+  width: 100%
+@media screen and (max-width: 991.999px)
+ header
+  height: 660px
+ .title
+  font-size: 60px
+ .title__h3
+  font-size: 12px
+ a
+  margin-right: 10px
+ .title__h1
+  font-size: 66px
+ .welcome_content_img
+  background-position: center center
+ .section_cabinets
+  .class_card_name
+   font-size: 19px
+ .section_cabinets .class_card_bottom
+  min-height: 340px
+ .card_title
+  font-size: 19px
+ .footer_text
+  margin-bottom: 15px
+ .footer_social span, .footer_social i
+  margin-right: 11px
+ .hide
+  display: none
+ .footer_instagram
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+ .special_try, .special_call
+  height: 300px
+ .special_title__big
+  font-size: 30px
+@media screen and (max-width: 767.999px)
+
+ .title__h1, .title
+  font-size: 26px
+ nav
+  & a
+   display: none
+ .button__open
+  padding: 10px 12px
+  font-size: 12px
+ .welcome_content_text
+  width: 100%
+ .welcome_content_img
+  display: none
+ .section_cabinets .class_cards
+  flex-wrap: wrap
+ .section_cabinets .class_card
+  width: 100%
+ .title__small
+  font-size: 25px
+ .section_trainers_list .cards
+  flex-wrap: wrap
+ .section_trainers_list .cards_card
+  width: 100%
+ .special_title__big
+  font-size: 25px
+ .section_special
+  flex-wrap: wrap
+ .special_try, .special_call
+  width: 100%
+  height: 235px
+ .footer_social span, .footer_social i
+  margin-right: 6px
+ .button
+  padding: 10px 20px
+  font-size: 10px
+ .class_card
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+ .section_cabinets .class_card_bottom
+  max-width: 349px
+  margin-bottom: 50px
+.my_offer
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ flex-direction: column
+ justify-content: center
+ align-items: center
+
+.more_size
+ height: 150px
